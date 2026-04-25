@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Video UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Prime Video</h1>
+</header>
+
+<div class="banner">
+    <h2>Trending Now</h2>
+</div>
+
+<div class="row">
+    <h3>Recommended for You</h3>
+    <div class="cards">
+        <div class="card">Movie 1</div>
+        <div class="card">Movie 2</div>
+        <div class="card">Movie 3</div>
+    </div>
+</div>
+
+<div class="row">
+    <h3>Continue Watching</h3>
+    <div class="cards">
+        <div class="card">Show 1</div>
+        <div class="card">Show 2</div>
+    </div>
+</div>
+
+</body>
+</html>
