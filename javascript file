@@ -1,0 +1,37 @@
+<script>
+// Responsive message (for learning/demo)
+function checkScreen() {
+    if (window.innerWidth < 600) {
+        console.log("Mobile View Activated");
+    } else {
+        console.log("Desktop View");
+    }
+}
+
+window.onload = checkScreen;
+window.onresize = checkScreen;
+
+// Scroll animation (fade-in cards when visible)
+const cards = document.querySelectorAll('.card');
+
+function revealCards() {
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (cardTop < screenHeight - 50) {
+            card.style.opacity = 1;
+            card.style.transform = "translateY(0)";
+        }
+    });
+}
+
+// Initial styles
+cards.forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = "translateY(50px)";
+    card.style.transition = "all 0.6s ease";
+});
+
+window.addEventListener("scroll", revealCards);
+</script>
