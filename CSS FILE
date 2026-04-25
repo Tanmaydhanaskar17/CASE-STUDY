@@ -1,0 +1,36 @@
+body {
+    background-color: #0f171e;
+    color: white;
+    font-family: Arial;
+}
+
+header {
+    background-color: #1a242f;
+    padding: 15px;
+}
+
+.banner {
+    height: 200px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    margin: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    width: 120px;
+    height: 160px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
