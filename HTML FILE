@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Prime Video UI</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Prime Video Clone</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Prime Video</h1>
+<header class="navbar">
+    <h1>prime video</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Shows</a>
+        <a href="#">My Stuff</a>
+    </nav>
 </header>
 
-<div class="banner">
-    <h2>Trending Now</h2>
-</div>
-
-<div class="row">
-    <h3>Recommended for You</h3>
-    <div class="cards">
-        <div class="card">Movie 1</div>
-        <div class="card">Movie 2</div>
-        <div class="card">Movie 3</div>
+<!-- Hero Banner -->
+<section class="banner">
+    <div class="banner-content">
+        <h2>Featured Movie</h2>
+        <p>Watch the latest blockbuster now</p>
+        <button>▶ Play</button>
     </div>
-</div>
+</section>
 
-<div class="row">
-    <h3>Continue Watching</h3>
-    <div class="cards">
-        <div class="card">Show 1</div>
-        <div class="card">Show 2</div>
-    </div>
-</div>
+<!-- Row -->
+<section class="row">
+    <h2>Recommended for You</h2>
+    <div class="cards" id="row1"></div>
+</section>
 
+<section class="row">
+    <h2>Continue Watching</h2>
+    <div class="cards" id="row2"></div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
