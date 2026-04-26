@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Prime Video Clone</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Prime Video Clone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Navbar -->
 <header class="navbar">
-    <h1>prime video</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Movies</a>
-        <a href="#">TV Shows</a>
-        <a href="#">My Stuff</a>
-    </nav>
+  <div class="logo">prime video</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">TV Shows</a>
+    <a href="#">My Stuff</a>
+  </nav>
 </header>
 
-<!-- Hero Banner -->
-<section class="banner">
-    <div class="banner-content">
-        <h2>Featured Movie</h2>
-        <p>Watch the latest blockbuster now</p>
-        <button>▶ Play</button>
-    </div>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Featured Movie</h1>
+    <p>Watch the latest blockbuster now</p>
+    <button>▶ Play</button>
+  </div>
 </section>
 
-<!-- Row -->
-<section class="row">
-    <h2>Recommended for You</h2>
-    <div class="cards" id="row1"></div>
-</section>
+<!-- Movie Sections -->
+<section class="movies-section">
+  <h2>Recommended for You</h2>
+  <div class="movie-row" id="recommended"></div>
 
-<section class="row">
-    <h2>Continue Watching</h2>
-    <div class="cards" id="row2"></div>
+  <h2>Continue Watching</h2>
+  <div class="movie-row" id="continue"></div>
 </section>
 
 <script src="script.js"></script>
