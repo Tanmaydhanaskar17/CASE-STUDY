@@ -1,26 +1,35 @@
-const movies = [
-    "https://via.placeholder.com/150x200",
-    "https://via.placeholder.com/150x200",
-    "https://via.placeholder.com/150x200",
-    "https://via.placeholder.com/150x200"
+const recommendedMovies = [
+  { name: "The Boys", img: "https://via.placeholder.com/150x220" },
+  { name: "Mirzapur", img: "https://via.placeholder.com/150x220" },
+  { name: "The Wheel of Time", img: "https://via.placeholder.com/150x220" },
+  { name: "Jack Ryan", img: "https://via.placeholder.com/150x220" },
+  { name: "The Terminal List", img: "https://via.placeholder.com/150x220" },
+  { name: "Rings of Power", img: "https://via.placeholder.com/150x220" }
 ];
 
-function loadMovies(rowId) {
-    const row = document.getElementById(rowId);
+const continueWatching = [
+  { name: "Reacher", img: "https://via.placeholder.com/150x220" },
+  { name: "The Boys", img: "https://via.placeholder.com/150x220" },
+  { name: "The Wheel of Time", img: "https://via.placeholder.com/150x220" },
+  { name: "Jack Ryan", img: "https://via.placeholder.com/150x220" },
+  { name: "The Terminal List", img: "https://via.placeholder.com/150x220" }
+];
 
-    movies.forEach(url => {
-        const div = document.createElement("div");
-        div.classList.add("card");
-        div.style.backgroundImage = `url(${url})`;
+function displayMovies(movies, containerId) {
+  const container = document.getElementById(containerId);
 
-        // Click event (simulate play)
-        div.onclick = () => {
-            alert("Playing movie...");
-        };
+  movies.forEach(movie => {
+    const card = document.createElement("div");
+    card.classList.add("movie-card");
 
-        row.appendChild(div);
-    });
+    card.innerHTML = `
+      <img src="${movie.img}" alt="${movie.name}">
+      <p>${movie.name}</p>
+    `;
+
+    container.appendChild(card);
+  });
 }
 
-loadMovies("row1");
-loadMovies("row2");
+displayMovies(recommendedMovies, "recommended");
+displayMovies(continueWatching, "continue");
