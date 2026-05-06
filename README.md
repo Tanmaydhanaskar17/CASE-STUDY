@@ -3,7 +3,16 @@ CASED STUDY ON AMAZON PRIME INTERFACE
 
 outputs-
 
-<img width="722" height="468" alt="Screenshot 2026-04-25 185902" src="https://github.com/user-attachments/assets/3afe50be-96cf-4a27-9c96-0f64b459e7aa" />
+<img width="1829" height="774" alt="Screenshot 2026-05-06 203157" src="https://github.com/user-attachments/assets/fb738a0a-aca3-44eb-a1af-ea1b9144da37" />
+
+
+<img width="1826" height="544" alt="Screenshot 2026-05-06 214846" src="https://github.com/user-attachments/assets/3ebde4f8-8594-447c-a7d4-9b28b67b1c26" />
+
+
+
+<img width="1488" height="521" alt="Screenshot 2026-05-06 214856" src="https://github.com/user-attachments/assets/e6a69c22-ff3a-447d-b801-fe02c81a5395" />
+
+
 
 output 2-
 
