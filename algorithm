@@ -1,0 +1,19 @@
+this algorithm used to movies based on recentely viewed
+const movies = [
+  { title: "Avengers", genre: "Action" },
+  { title: "Batman", genre: "Action" },
+  { title: "Notebook", genre: "Romance" },
+  { title: "Titanic", genre: "Romance" }
+];
+
+let userHistory = ["Avengers"]; // watched movie
+
+function recommendMovies() {
+  let watchedGenre = movies.find(m => m.title === userHistory[0]).genre;
+
+  let recommendations = movies.filter(m => m.genre === watchedGenre);
+
+  return recommendations;
+}
+
+console.log(recommendMovies());
